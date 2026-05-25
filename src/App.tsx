@@ -1,4 +1,4 @@
-import MainContainer from './components/MainContainer'
+import MainContainerTabs from './components/MainContainerTabs'
 import Navbar from './components/Navbar'
 import Quickbar from './components/Quickbar'
 
@@ -9,10 +9,13 @@ function App() {
                 <Navbar />
             </div>
             <div className="flex">
-                <Quickbar />
-                <MainContainer />
+                <div>
+                    <Quickbar />
+                </div>
+                <div className='flex flex-1'>
+                    <MainContainerTabs />
+                </div>
             </div>
-
         </div>
     )
 }

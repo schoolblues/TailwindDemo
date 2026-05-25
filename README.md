@@ -6,3 +6,5 @@
 - React + Typescript
 - Vite
 - Tailwindcss V4
+- Node.js
+- Effect-TS

@@ -1,6 +1,6 @@
 function Quickbar() {
     return (
-        <div className="flex h-screen w-60 border border-solid rounded-tr-2xl border-mauve-300 bg-white">
+        <div className="flex h-full w-60 border border-solid rounded-tr-2xl border-mauve-300 bg-white">
             <div className="text-left space-y-3.5">
             <p>Agents</p>
             <p>Deployments</p>

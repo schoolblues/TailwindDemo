@@ -1,9 +1,9 @@
 function ModelGuardrail() {
     return (
-        <div className="flex flex-1 border-l border-b border-r border-solid border-mauve-300 bg-white">
-            <div className="pl-4 pt-4 flex-col">
-                <p>Hello There</p>
-                <p>This is placeholder text while I layout the rest of the page</p>
+        <div className="flex-1 border-l border-b border-r border-solid border-mauve-300 bg-white">
+            <div className="pl-4 pt-4">
+                <p>Guardrail</p>
+                <p>preview</p>
             </div>
         </div>
     )

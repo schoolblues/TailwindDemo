@@ -3,7 +3,7 @@ function ChatWindowTabs() {
         <div className="flex flex-1 w-full h-full bg-white p-4 border-mauve-300 space-x-3.5">
         <div className="flex flex-1 text-left space-x-3.5">
             <p>Chat</p>
-            <p>YAMl</p>
+            <p>YAML</p>
             <p>Call Agent</p>
         </div>
         <div className="flex text-right space-x-3.5">

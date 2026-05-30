@@ -6,3 +6,6 @@
 - React + Typescript
 - Vite
 - Tailwindcss V4
+
+## SVG Icons
+- Me

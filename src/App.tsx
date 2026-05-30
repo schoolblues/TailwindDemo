@@ -17,12 +17,12 @@ function App() {
         <div className='flex flex-col h-screen bg-white'>
             <Navbar />
             <div className='flex flex-1 min-h-0'>
-                <div>
+                <div className='bg-mauve-200'>
                     <Quickbar />
                 </div>
-                <div className='flex flex-col flex-1 min-h-0'>
+                <div className='flex flex-col flex-1 min-h-0 bg-mauve-200'>
                     <MainContainerTabs />
-                    <div className='flex flex-1 min-h-0'>
+                    <div className='flex flex-1 min-h-0 bg-white'>
                     <div className='flex flex-col'>
                         <ModelSelectionSettings />
                         <ModelInstructions />

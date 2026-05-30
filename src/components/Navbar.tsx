@@ -5,7 +5,7 @@ import feedBack from '../assets/feedback.svg'
 
 function Navbar() {
     return (
-        <div className="flex flex-row h-12 items-center justify-center bg-mauve-200 border-t border-solid border-mauve-300 space-x-10">
+        <div className="flex flex-row h-12 items-center justify-center bg-mauve-100 border-t border-solid border-mauve-300 space-x-10">
             <p>NOTMicrosoft Foundry</p>
             <p>NOTfoundryresearch</p>
             <p>New NOTFoundry</p>

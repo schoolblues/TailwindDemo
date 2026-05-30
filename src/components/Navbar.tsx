@@ -14,9 +14,9 @@ function Navbar() {
             <p>Build</p>
             <p>Operate</p>
             <p>Docs</p>
-            <img className="h-8 w-8" src={searchIcon} alt="Search" />
-            <img className="h-8 w-8" src={messageIcon} alt="Message" />
-            <img className="h-8 w-8" src={bell} alt="Notification Bell" />
+            <img className="h-4 w-4" src={searchIcon} alt="Search" />
+            <img className="h-4 w-4" src={messageIcon} alt="Message" />
+            <img className="h-4 w-4" src={bell} alt="Notification Bell" />
             <img className="h-15 w-15" src={feedBack} alt="Feedback" />
         </div>
     )

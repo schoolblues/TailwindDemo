@@ -1,8 +1,8 @@
 function Quickbar() {
     return (
-        <div className="flex h-full w-60 border border-solid rounded-tr-2xl border-mauve-300 bg-white">
+        <div className="flex h-full w-60 border-solid rounded-tr-2xl border-windows-300 bg-white">
             <div className="indent-10 space-y-3.5 w-full">
-                <div className="pt-1 pb-1 my-2 mx-2 bg-mauve-100 rounded">
+                <div className="pt-1 pb-1 my-2 mx-2 bg-windows-100 rounded">
                     <p>Agents</p>
                 </div>
                 <div className="my-2 mx-2">

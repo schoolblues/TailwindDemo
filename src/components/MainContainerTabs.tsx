@@ -1,7 +1,7 @@
 function MainContainerTabs() {
     return (
-        <div className="w-full border border-solid border-mauve-300 rounded-tl-2xl bg-white">
-            <div className="pt-4 pl-4 flex flex-1 border-solid border-mauve-300">
+        <div className="w-full border-l-2 border-b border-solid border-windows-100 rounded-tl-2xl bg-white">
+            <div className="pt-4 pl-4 flex flex-1 border-solid border-windows-300">
                 <div className="flex flex-1 text-left">
                     <p>User</p>
                 </div>
@@ -12,7 +12,7 @@ function MainContainerTabs() {
                     <p>Publish</p>
                 </div>
             </div>
-            <div className="pb-1 pt-2 pl-4 border-solid border-mauve-300 flex space-x-3.5">
+            <div className="pb-1 pt-2 pl-4 border-solid border-windows-300 flex space-x-3.5">
                 <p>Playground</p>
                 <p>Traces</p>
                 <p>Monitor</p>

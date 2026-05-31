@@ -1,3 +1,9 @@
 @import "tailwindcss";
 
  html, body, #root { height: 100%; }
+
+ @theme {
+    --color-windows: #0078d4;
+    --color-windows-300: #7fbbe9;
+    --color-windows-100: #cce4f6;
+ }

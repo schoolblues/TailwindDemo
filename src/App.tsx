@@ -11,8 +11,10 @@ import ChatWindowTabs from './components/ChatWindowTabs'
 import ChatWindow from './components/ChatWindow'
 import MessageWindow from './components/MessageWindow'
 import AIDisclaimer from './components/AIDisclaimer'
+import { useState } from 'react'
 
 function App() {
+    const [active, setActive] = useState<"Chat" | "YAML" | "Call Agent">("Chat")
     return (
         <div className='flex flex-col h-screen bg-white'>
             <Navbar />
@@ -32,8 +34,8 @@ function App() {
                         <ModelGuardrail />
                     </div>
                     <div className='flex flex-col flex-1 min-h-0'>
-                        <ChatWindowTabs />
-                        <ChatWindow />
+                        <ChatWindowTabs active={active} setActive={setActive}/>
+                        <ChatWindow active={active} />
                         <MessageWindow />
                         <AIDisclaimer />
                     </div>

@@ -2,31 +2,31 @@ function Quickbar() {
     return (
         <div className="flex h-full w-60 border border-solid rounded-tr-2xl border-mauve-300 bg-white">
             <div className="indent-10 space-y-3.5 w-full">
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                <div className="pt-1 pb-1 my-2 mx-2 bg-mauve-100 rounded">
                     <p>Agents</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Deployments</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Fine-Tune</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Tools</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Knowledge</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Memory</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Data</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Evaluations</p>
-                    </div>
-                <div className="my-2 mx-2 border border-solid border-mauve-300 bg-mauve-100 rounded-md">
+                </div>
+                <div className="my-2 mx-2">
                     <p>Guardrails</p>
                 </div>
             </div>

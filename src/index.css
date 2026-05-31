@@ -1,1 +1,23 @@
 @import "tailwindcss";
+@import "@fontsource-variable/geist";
+
+ html, body, #root { 
+    height: 100%;
+}
+
+body {
+    font-size: var(--text-base);
+    letter-spacing: 0.03em;
+    -webkit-font-smoothingL: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+ @theme {
+    --color-windows: #0078d4;
+    --color-windows-300: #7fbbe9;
+    --color-windows-100: #cce4f6;
+    
+    --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+    --text-base: 0.9rem;
+ }

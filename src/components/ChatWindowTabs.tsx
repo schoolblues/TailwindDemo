@@ -1,3 +1,6 @@
+import settings from "../assets/settings.svg"
+import newChat from "../assets/newChat.svg"
+
 type Props = {
     active: "Chat" | "YAML" | "Call Agent"
     setActive: (tab: "Chat" | "YAML" | "Call Agent") => void
@@ -17,9 +20,19 @@ function ChatWindowTabs({ setActive }: Props) {
                 <button className="w-full py-1 h-full" onClick={() => setActive("Call Agent")}>Call Agent</button>
             </div>
         </div>
-        <div className="flex text-right space-x-3.5 ml-auto">
-            <p>Metrics</p>
-            <p>Configure</p>
+        <div className="mt-4 mr-4 items-center flex text-right space-x-3.5 ml-auto">
+            <div className="">
+                <p>Metrics</p>
+            </div>
+            <div className="">
+                <img className="h-4 w-4" src={settings} alt="SettingsButton" />
+            </div>
+            <div className="">
+                <p>Configure</p>
+            </div>
+            <div className="">
+                <img className="h-4 w-4" src={newChat} alt="New Chat" />
+            </div>
         </div>
         </div>
     ) 

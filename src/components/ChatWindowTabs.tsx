@@ -13,11 +13,11 @@ function ChatWindowTabs({ setActive }: Props) {
             <div className="flex-1 w-20 bg-white text-center rounded">
                 <button className="w-full py-1 h-full" onClick={() => setActive("Chat")}>Chat</button> 
             </div>
-            <div className="flex-1 w-20 text-center">
+            <div className="flex-1 w-20 text-center text-black/60">
                 <button className="w-full py-1 h-full" onClick={() => setActive("YAML")}>YAML</button>
             </div>
-            <div className="flex-1 w-20 justify-center text-center">
-                <button className="w-full py-1 h-full" onClick={() => setActive("Call Agent")}>Call Agent</button>
+            <div className="flex-1 w-20 justify-center text-center text-black/60">
+                <button className="w-full py-1 h-full" onClick={() => setActive("Call Agent")}>Call agent</button>
             </div>
         </div>
         <div className="mt-4 mr-4 items-center flex text-right space-x-3.5 ml-auto">

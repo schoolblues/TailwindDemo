@@ -3,13 +3,28 @@ function MainContainerTabs() {
         <div className="w-full border-l-2 border-b border-solid border-windows-100 rounded-tl-2xl bg-white">
             <div className="pt-4 pl-4 flex flex-1 border-solid border-windows-300">
                 <div className="flex flex-1 text-left">
-                    <p>User</p>
+                    <p className="font-semibold">
+                        User
+                    </p>
                 </div>
-                <div className="flex flex-1 space-x-21 text-right">
-                    <p>Version</p>
-                    <p>Save</p>
-                    <p>Preview</p>
-                    <p>Publish</p>
+                <div className="flex flex-1 space-x-3 text-right">
+                    <div className="flex items-center">
+                        <p className="text-xs font-medium">
+                            Version:
+                        </p>
+                        <p className="text-xs ml-1 text-black/70">
+                            1 (5/11/2026 10:15PM)
+                        </p>
+                    </div>
+                    <div className="py-1 px-4 border border-solid border-windows-100 bg-windows-100 rounded-3xl">
+                        <p className="text-black/60">Save</p>
+                    </div>
+                    <div className="py-1 px-4 border border-solid border-windows-100 rounded-2xl">
+                        <p>Preview</p>
+                    </div>
+                    <div className="py-1 px-4 border border-solid border-windows-100 bg-white rounded-2xl">
+                        <p>Publish</p>
+                    </div>
                 </div>
             </div>
             <div className="pb-1 pt-2 pl-4 border-solid border-windows-300 flex space-x-3.5">

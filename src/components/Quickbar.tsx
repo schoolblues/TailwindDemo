@@ -2,6 +2,8 @@ import weirdGon from "../assets/WeirdGon.svg"
 import boxes from "../assets/boxes.svg"
 import beaker from "../assets/Beaker.svg"
 import tools from "../assets/Tools.svg"
+import circleBoxes from "../assets/circleBoxes.svg"
+import data from "../assets/data.svg"
 
 function Quickbar() {
     return (
@@ -23,13 +25,15 @@ function Quickbar() {
                     <img className="h-4 w-4 ml-2" src={tools} alt="img" />
                     <p>Tools</p>
                 </div>
-                <div className="text-black/60 my-2 mx-2">
+                <div className="flex items-center indent-3 text-black/60 my-2 mx-2">
+                    <img className="h-4 w-4 ml-2" src={circleBoxes} alt="img" />
                     <p>Knowledge</p>
                 </div>
                 <div className="text-black/60 my-2 mx-2">
                     <p>Memory</p>
                 </div>
-                <div className="text-black/60 my-2 mx-2">
+                <div className="flex items-center indent-3 text-black/60 my-2 mx-2">
+                    <img className="h-4 w-4 ml-2" src={data} alt="img" />
                     <p>Data</p>
                 </div>
                 <div className="text-black/60 my-2 mx-2">

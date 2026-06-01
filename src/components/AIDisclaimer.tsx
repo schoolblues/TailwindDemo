@@ -1,7 +1,9 @@
 function AIDisclaimer() {
     return (
-        <div className="mb-2 not-last:pb-4 text-center">
-            <p>AI-Generated content may be incorrect</p>
+        <div className="mb-4 pt-1 text-center">
+            <p className="text-xs text-black/60">
+                AI-Generated content may be incorrect
+            </p>
         </div>
     )
 }

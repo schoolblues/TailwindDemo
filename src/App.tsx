@@ -25,7 +25,7 @@ function App() {
                 <div className='flex flex-col flex-1 min-h-0 bg-windows-100'>
                     <MainContainerTabs />
                     <div className='flex flex-1 min-h-0 bg-white'>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col flex-1'>
                         <ModelSelectionSettings />
                         <ModelInstructions />
                         <ModelTools />

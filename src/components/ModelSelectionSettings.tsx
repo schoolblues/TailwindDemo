@@ -2,7 +2,7 @@ import parameters from "../assets/parameters.svg"
 
 function ModelSelectionSettings() {
     return (
-        <div className="flex flex-col flex-1 border-l-2 border-r border-b border-solid border-windows-100 bg-white">
+        <div className="h-36.5 flex flex-col border-l-2 border-r border-b border-solid border-windows-100 bg-white">
             <div className="indent-2 px-4 pt-4 flex flex-row">
                 <div className="flex-1 p-1 border border-solid border-windows-100 bg-windows-100 rounded">
                     <p>Model: Biggly-Wiggly-7.9-zippy</p>
@@ -11,7 +11,7 @@ function ModelSelectionSettings() {
                     <img className="w-6 h-6" src={parameters} alt="" />
                 </div>
             </div>
-            <div className="flex justify-center flex-col h-18 indent-3 mx-4 mt-5 border border-solid border-windows-100 bg-windows-100 rounded">
+            <div className="flex justify-center flex-col h-16 indent-3 mx-4 mt-4 border border-solid border-windows-100 bg-windows-100 rounded">
                 <div className="">
                     <p>Voice Mode</p>
                 </div>

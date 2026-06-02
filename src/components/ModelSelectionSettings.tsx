@@ -2,7 +2,7 @@ import parameters from "../assets/parameters.svg"
 
 function ModelSelectionSettings() {
     return (
-        <div className="h-36.5 flex flex-col border-l-2 border-r border-b border-solid border-windows-100 bg-white">
+        <div className="h-36.5 flex flex-col border-b border-solid border-windows-100 bg-white">
             <div className="indent-2 px-6 pt-4 flex flex-row">
                 <div className="flex-1 p-1 border border-solid border-windows-100 bg-windows-100 rounded">
                     <p>Model: Biggly-Wiggly-7.9-zippy</p>

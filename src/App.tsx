@@ -33,7 +33,7 @@ function App() {
                             <ModelMemory />
                             <ModelGuardrail />
                         </div>
-                        <div className='flex flex-col flex-1 min-h-0'>
+                        <div className='flex flex-col flex-1 min-h-0 border-l border-windows-100'>
                             <ChatWindowTabs active={active} setActive={setActive}/>
                             <ChatWindow active={active} />
                             <MessageWindow />

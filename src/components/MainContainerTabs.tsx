@@ -1,6 +1,6 @@
 function MainContainerTabs() {
     return (
-        <div className="w-full border-l-2 border-b border-solid border-windows-100 rounded-tl-2xl bg-white">
+        <div className="w-full border-b border-solid border-windows-100 rounded-tl-2xl bg-white">
             <div className="pt-4 pl-4 flex flex-1 border-solid border-windows-300">
                 <div className="flex flex-1 text-left">
                     <p className="font-semibold">

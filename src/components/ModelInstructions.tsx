@@ -21,7 +21,7 @@ function ModelInstructions() {
     }, [open]);
 
     return (
-        <div className={`flex flex-1 flex-row border-l-2 border-r border-b border-solid border-windows-100 bg-white transition-all duration-250 ease-in-out overflow-hidden ${open ? "max-h-150" : "max-h-20"}`}>
+        <div className={`flex flex-1 flex-row border-b border-solid border-windows-100 bg-white transition-all duration-250 ease-in-out overflow-hidden ${open ? "max-h-150" : "max-h-20"}`}>
             <div className="ml-6 mt-7">
                 <p>Instructions</p>
             </div>

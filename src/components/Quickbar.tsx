@@ -10,7 +10,7 @@ import memory from "../assets/memory.svg"
 
 function Quickbar() {
     return (
-        <div className="flex h-full w-60 border-solid rounded-tr-2xl border-windows-300 bg-white">
+        <div className="flex h-full w-60 border-r-2 border-solid rounded-tr-2xl border-windows-100 bg-white">
             <div className="flex flex-col w-full leading-none">
                 <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 bg-windows-100 rounded">
                     <img className="h-4 w-4 ml-2" src={weirdGon} alt="img" />

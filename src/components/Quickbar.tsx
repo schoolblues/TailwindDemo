@@ -16,35 +16,35 @@ function Quickbar() {
                     <img className="h-4 w-4 ml-2" src={weirdGon} alt="img" />
                     <p>Agents</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={boxes} alt="img" />
                     <p>Deployments</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={beaker} alt="img" />
                     <p>Fine-Tune</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={tools} alt="img" />
                     <p>Tools</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={circleBoxes} alt="img" />
                     <p>Knowledge</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={memory} alt="img" />
                     <p>Memory</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={data} alt="img" />
                     <p>Data</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={scale} alt="img" />
                     <p>Evaluations</p>
                 </div>
-                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/60">
+                <div className="flex items-center indent-3 pt-2 pb-2 my-2 mx-2 text-black/70">
                     <img className="h-4 w-4 ml-2" src={shield} alt="img" />
                     <p>Guardrails</p>
                 </div>

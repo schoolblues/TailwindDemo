@@ -25,20 +25,20 @@ function App() {
                 <div className='flex flex-col flex-1 min-h-0 bg-windows-100'>
                     <MainContainerTabs />
                     <div className='flex flex-1 min-h-0 bg-white'>
-                    <div className='flex flex-col flex-1'>
-                        <ModelSelectionSettings />
-                        <ModelInstructions />
-                        <ModelTools />
-                        <ModelKnowledge/>
-                        <ModelMemory />
-                        <ModelGuardrail />
-                    </div>
-                    <div className='flex flex-col flex-1 min-h-0'>
-                        <ChatWindowTabs active={active} setActive={setActive}/>
-                        <ChatWindow active={active} />
-                        <MessageWindow />
-                        <AIDisclaimer />
-                    </div>
+                        <div className='flex flex-col flex-none'>
+                            <ModelSelectionSettings />
+                            <ModelInstructions />
+                            <ModelTools />
+                            <ModelKnowledge/>
+                            <ModelMemory />
+                            <ModelGuardrail />
+                        </div>
+                        <div className='flex flex-col flex-1 min-h-0'>
+                            <ChatWindowTabs active={active} setActive={setActive}/>
+                            <ChatWindow active={active} />
+                            <MessageWindow />
+                            <AIDisclaimer />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,39 @@
-import { useEffect, useState} from 'react'
+import arrowUp from "../assets/arrowUp.svg"
+import arrowDown from "../assets/arrowDown.svg"
+import { useState, useEffect, useRef } from 'react'
 
 function ModelInstructions() {
     const [open, setOpen] = useState(false)
+    const ref = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!open) return;
+
+        const handler = (event: MouseEvent) => { 
+            if (ref.current && !ref.current.contains(event.target as Node)) {
+                setOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handler);
+        
+        return () => 
+            document.removeEventListener("mousedown", handler);
+    }, [open]);
 
     return (
-        <div className="flex flex-1 flex-col border-l-2 border-r border-b border-solid border-windows-100 bg-white">
-            <div className="pl-4 pt-4 flex">
+        <div className={`flex flex-1 flex-row border-l-2 border-r border-b border-solid border-windows-100 bg-white transition-all duration-250 ease-in-out overflow-hidden ${open ? "max-h-150" : "max-h-20"}`}>
+            <div className="ml-6 mt-7">
                 <p>Instructions</p>
-                <button className="ml-90 w-5 h-5 bg-black"></button>
             </div>
-            <div className=" mx-4 mt-8 mb-6 pb-26 bg-windows-100">
-                <p className='m-2'>
-                    Write your prompt here to give your agent instructions.
-                </p>
+            <div ref={ref} className="flex flex-col pt-7 mr-6">
+                <button className="ml-90 w-5 h-5" onClick={() => setOpen(o => !o)}>
+                    <img src={open ? arrowUp : arrowDown} alt="img"/>
+                </button>
+                <div className={`-ml-21 mt-14 mb-6 pb-26 bg-windows-100 transition-all duration-200 ease-in-out ${open ? "max-h-150 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <p className='m-2 text-black/60'>
+                        Write your prompt here to give your agent instructions.
+                    </p>
+                </div>
             </div>
         </div>
     )

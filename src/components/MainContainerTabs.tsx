@@ -27,7 +27,7 @@ function MainContainerTabs() {
                     </div>
                 </div>
             </div>
-            <div className="pb-1 pt-2 pl-4 border-solid border-windows-300 flex space-x-3.5">
+            <div className="pb-1 pt-2 pl-6 border-solid border-windows-300 flex space-x-3.5">
             <div className="">
                 <p>Playground</p>
             </div>

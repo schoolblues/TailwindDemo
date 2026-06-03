@@ -21,7 +21,7 @@ function ModelKnowledge() {
     }, [open]);
 
     return (
-        <div className={`flex flex-row items-start border-b pt-7 border-solid border-windows-100 min-h-20 bg-white transition-[max-height] duration-300 ease-in-out overflow-hidden ${open ? "max-h-60" : "max-h-20"}`}>
+        <div className={`flex flex-row items-center border-b border-solid border-windows-100 min-h-20 bg-white transition-[max-height] duration-300 ease-in-out overflow-hidden ${open ? "max-h-60" : "max-h-20"}`}>
             <div className="ml-6">
                 <p>Knowledge</p>
             </div>

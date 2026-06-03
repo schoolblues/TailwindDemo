@@ -6,12 +6,12 @@ function ModelInstructions() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className={`flex flex-row items-start border-b pt-7 border-solid border-windows-100 bg-white transition-[max-height] duration-300 ease-in-out overflow-hidden ${open ? "max-h-60" : "max-h-20"}`}>
+        <div className={`flex flex-row items-start border-b pt-5.5 border-solid border-windows-100 bg-white transition-[max-height] duration-300 ease-in-out overflow-hidden ${open ? "max-h-60" : "max-h-16"}`}>
             <div className="ml-6">
                 <p>Instructions</p>
             </div>
             <div className="flex flex-col mr-6">
-                <button className="w-3 h-3 self-end mr-1" onClick={() => setOpen(o => !o)}>
+                <button className="w-3 h-5 self-end mr-1" onClick={() => setOpen(o => !o)}>
                     <img src={open ? arrowUp : arrowDown} alt="img"/>
                 </button>
                 <div className={`-ml-21 mt-14 mb-6 pb-15 bg-windows-100`}>

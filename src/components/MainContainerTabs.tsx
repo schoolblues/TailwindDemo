@@ -1,7 +1,7 @@
 function MainContainerTabs() {
     return (
         <div className="w-full border-b border-solid border-windows-100 rounded-tl-2xl bg-white">
-            <div className="pt-4 pl-4 flex flex-1 border-solid border-windows-300">
+            <div className="pt-4 pl-6 flex flex-1 border-solid border-windows-300">
                 <div className="flex flex-1 text-left">
                     <p className="font-semibold">
                         User
@@ -19,10 +19,10 @@ function MainContainerTabs() {
                     <div className="py-1 px-4 border border-solid border-windows-100 bg-windows-100 rounded-3xl">
                         <p className="text-black/70">Save</p>
                     </div>
-                    <div className="py-1 px-4 border border-solid border-windows-100 rounded-2xl">
+                    <div className="py-1 px-4 border border-solid border-windows-300 rounded-2xl">
                         <p>Preview</p>
                     </div>
-                    <div className="py-1 px-4 border border-solid border-windows-100 bg-white rounded-2xl">
+                    <div className="py-1 px-4 border border-solid border-windows-300 bg-white rounded-2xl">
                         <p>Publish</p>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ function ModelSelectionSettings() {
                     <img className="w-6 h-6" src={parameters} alt="" />
                 </div>
             </div>
-            <div className="flex justify-center flex-col h-16 indent-3 mx-6 mt-4 border border-solid border-windows-100 bg-windows-100 rounded">
+            <div className="flex justify-center flex-col h-16 indent-3 mx-6 mb-5 mt-4 border border-solid border-windows-100 bg-windows-100 rounded">
                 <div className="">
                     <p>Voice Mode</p>
                 </div>

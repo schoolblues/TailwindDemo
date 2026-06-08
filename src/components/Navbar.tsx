@@ -45,9 +45,9 @@ function Navbar() {
                 <p>Operate</p>
                 <p>Docs</p>
             </div>
-            <div className="flex mr-7 space-x-3.5">
+            <div className="flex items-center mr-7 space-x-3.5">
                 <img className="h-4.5 w-4.5" src={bell} alt="Notification Bell" />
-                <img className="h-4.5 w-4.5" src={feedBack} alt="Feedback" />
+                <img className="h-5 w-5 -ml-0.5" src={feedBack} alt="Feedback" />
                 <img className="h-5 w-5" src={profilePlaceholder} alt="svg" />
             </div>
         </div>

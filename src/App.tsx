@@ -57,7 +57,9 @@ function App() {
                             <ModelMemory />
                             <ModelGuardrail />
                         </div>
-                        <div onMouseDown={beginResize} className="-ml-1 w-1 cursor-col-resize hover:bg-windows flex-none"></div>
+                        <div className="-ml-1 w-1 hover:bg-windows flex-none relative">
+                            <div onMouseDown={beginResize} className="absolute inset-y-0 left-0 -right-2 cursor-col-resize"></div>
+                        </div>
                         <div className='flex flex-col flex-1 min-h-0'>
                             <ChatWindowTabs active={active} setActive={setActive}/>
                             <ChatWindow active={active} />

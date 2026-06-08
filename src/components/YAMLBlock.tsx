@@ -1,7 +1,43 @@
 import { useEffect, useState} from 'react';
 import { codeToHtml } from 'shiki';
+import githubLightHC from 'shiki/themes/github-light-high-contrast.mjs'
 
-const sample = ` metadata:
+const punctuationTheme = {
+    ...githubLightHC,
+    name: 'github-light-high-contrast-yellow',
+    tokenColors: [
+        ...githubLightHC.tokenColors ?? [],
+        {
+            scope: [
+                'punctuation.separator.key-value.mapping.yaml',
+                               
+                'punctuation.definition.string.begin.yaml',
+                
+                'punctuation.definition.string.end.yaml',
+                
+                'punctuation.definition.block.sequence.item.yaml', 
+                
+                'punctuation.definition.mapping.begin.yaml',
+                
+                'punctuation.definition.mapping.end.yaml',
+                
+                'punctuation.definition.sequence.begin.yaml',
+                
+                'punctuation.definition.sequence.end.yaml', 
+            ],
+            settings: { foreground: '#9900ff' },
+        },
+
+        {
+             scope: [ 
+                'entity.name.tag.yaml' 
+            ],
+            settings: { foreground: '#1a7f37' },
+        },
+    ],
+};
+
+const sample = `metadata:
     logo: Avatar_Default.svg
     Notmicrosoft.voice-live.enabled: "false"
 object: agent.version
@@ -25,8 +61,8 @@ blueprint:
     client_id:
 blueprint_reference:
     type:
-    blueprint_id
-agent_guid`;
+    blueprint_id:
+agent_guid:`;
 
 export function YAMLBlock() {
     const [html, setHtml] = useState('');
@@ -35,7 +71,12 @@ export function YAMLBlock() {
         let alive = true;
         codeToHtml(sample, {
             lang: "yaml",
-            theme: 'github-dark',
+            theme: punctuationTheme,
+            colorReplacements: {                                         
+           '#ffffff' : '#cce4f6',
+           '#023b95' : '#e60000',
+           '#032563' : '#000000'                                                  
+        },
         }).then((out) => {
             if (alive) setHtml(out);
         });
@@ -43,6 +84,6 @@ export function YAMLBlock() {
     }, []);
 
     return (
-        <div className="" dangerouslySetInnerHTML={{ __html: html }}></div>
+        <div className="yaml-view h-full m-4 [&>pre]:rounded-md [&>pre]:h-full [&>pre]:pt-1" dangerouslySetInnerHTML={{ __html: html }}></div>
     );
 }

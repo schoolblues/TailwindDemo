@@ -28,11 +28,13 @@ function App() {
             const left = panelRef.current?.getBoundingClientRect().left ?? 0
             setPanelWidth(Math.min(Math.max(event.clientX - left, 200), 700))
         }
+
         const onMove = () => {
             resize.current = false
             window.removeEventListener('mousemove', onGrab)
             window.removeEventListener('mouseup', onMove)
         }
+        
         window.addEventListener('mousemove', onGrab)
         window.addEventListener('mouseup', onMove)
     }

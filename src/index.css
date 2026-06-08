@@ -21,3 +21,22 @@ body {
     --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
     --text-base: 0.9rem;
  }
+
+ .yaml-view {
+    counter-reset: step;
+    counter-increment: step 0;
+ }
+
+ .yaml-view .line {
+    margin-top: 0.5rem;
+ }
+
+ .yaml-view .line::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    text-align: left;
+ }

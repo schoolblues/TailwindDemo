@@ -6,17 +6,23 @@ type Props = {
     setActive: (tab: "Chat" | "YAML" | "Call Agent") => void
 }
 
-function ChatWindowTabs({ setActive }: Props) {
+function ChatWindowTabs({ active, setActive }: Props) {
+
+    const buttonStyling = (tab: Props["active"]) =>
+    `flex-1 w-20 text-center text-xs rounded 
+    ${active === tab ? "bg-white text-black" 
+    : "text-black/60"}`;
+        
     return (
         <div className="flex flex-1 h-full bg-white border-windows-100 pl-4">
             <div className="flex mt-4 border border-solid border-windows-100 bg-windows-100 rounded space-x-0.5">
-                <div className="flex-1 w-20 bg-white text-center rounded text-xs">
+                <div className={buttonStyling("Chat")}>
                     <button className="w-full py-2 h-full" onClick={() => setActive("Chat")}>Chat</button> 
                 </div>
-                <div className="flex-1 w-20 text-center text-black/60 text-xs">
+                <div className={buttonStyling("YAML")}>
                     <button className="w-full py-2 h-full" onClick={() => setActive("YAML")}>YAML</button>
                 </div>
-                <div className="flex-1 w-20 justify-center text-center text-xs text-black/60">
+                <div className={buttonStyling("Call Agent")}>
                     <button className="w-full py-2 h-full" onClick={() => setActive("Call Agent")}>Call agent</button>
                 </div>
             </div>

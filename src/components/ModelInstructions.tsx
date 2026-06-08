@@ -16,10 +16,10 @@ function ModelInstructions() {
             </div>
             <div className={`ml-5 mt-5 grid transition-[grid-template-rows] duration-300 ease-in-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
                 <div className="overflow-hidden pr-6 pb-5">
-                    <div className="">
+                    <div className="pt-1">
                         <img className="h-5 w-5 ml-auto" src={magicWand} alt="svg" />
                     </div>
-                    <div className="bg-windows-100 pb-26 mt-4 pt-4 pl-3">
+                    <div className="bg-windows-100 pb-11 mt-3 h-30 pt-3 pl-3 resize-y overflow-auto scrollbar-none">
                         <p className='text-xs text-black/60 max-w-96'>
                             Write your prompt here to give your agent instructions.
                         </p>

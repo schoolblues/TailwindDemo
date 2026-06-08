@@ -49,7 +49,7 @@ function App() {
                 <div className='flex flex-col flex-1 min-h-0 bg-windows-100'>
                     <MainContainerTabs />
                     <div className='flex flex-1 min-h-0 bg-white'>
-                        <div ref={ panelRef } className='flex flex-col flex-none overflow-auto' style={{ width: panelWidth }}>
+                        <div ref={ panelRef } className='flex flex-col border-r border-windows-100 flex-none overflow-auto' style={{ width: panelWidth }}>
                             <ModelSelectionSettings />
                             <ModelInstructions />
                             <ModelTools />
@@ -57,8 +57,8 @@ function App() {
                             <ModelMemory />
                             <ModelGuardrail />
                         </div>
-                        <div onMouseDown={beginResize} className="w-1 cursor-col-resize hover:bg-windows flex-none"></div>
-                        <div className='flex flex-col flex-1 min-h-0 border-l border-windows-100'>
+                        <div onMouseDown={beginResize} className="-ml-1 w-1 cursor-col-resize hover:bg-windows flex-none"></div>
+                        <div className='flex flex-col flex-1 min-h-0'>
                             <ChatWindowTabs active={active} setActive={setActive}/>
                             <ChatWindow active={active} />
                             <MessageWindow />

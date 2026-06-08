@@ -19,9 +19,6 @@ function MainContainerTabs() {
                     <div className="py-1 px-4 border border-solid border-windows-100 bg-windows-100 rounded-3xl">
                         <p className="text-black/70">Save</p>
                     </div>
-                    <div className="py-1 px-4 border border-solid border-windows-300 rounded-2xl">
-                        <p>Preview</p>
-                    </div>
                     <div className="py-1 px-4 border border-solid border-windows-300 bg-white rounded-2xl">
                         <p>Publish</p>
                     </div>
@@ -30,6 +27,9 @@ function MainContainerTabs() {
             <div className="pb-1 pt-2 pl-6 border-solid border-windows-300 flex space-x-3.5">
             <div className="">
                 <p>Playground</p>
+            </div>
+            <div className="text-black/60">
+                <p>Details</p>
             </div>
             <div className="text-black/60">
                 <p>Traces</p>

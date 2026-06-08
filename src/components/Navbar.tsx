@@ -20,7 +20,7 @@ function Navbar() {
                 <img className='-ml-0.5 -rotate-22 h-3 w-3' src={forwardSlash} alt="SVG" />
             </div>
             <div className="-ml-7 mr-0 text-xs">
-                <p>NOTfoundryresearch</p>
+                <p>foundryresearch</p>
             </div>
             <div className="">
                 <img className="ml-1 h-2.5 w-2.5" src={upDown} alt="svg" />
@@ -32,8 +32,8 @@ function Navbar() {
             <div className="">
                 <img className="h-5 w-5" src={sparkleBubble} alt="svg" />
             </div>
-            <div className="text-black/60 text-xs mr-0">
-                <p>New NOTFoundry</p>
+            <div className="text-black/60 text-xs mr-3">
+                <p>New Foundry</p>
             </div>
             <div className="flex space-x-[0.8rem] text-black/60 text-xs mr-2">
                 <p>Home</p>

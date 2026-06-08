@@ -25,24 +25,27 @@ function Navbar() {
             <div className="">
                 <img className="ml-1 h-2.5 w-2.5" src={upDown} alt="svg" />
             </div>
-            <div className="flex h-8 w-60 border border-solid border-windows-300 rounded-2xl items-center mr-3 ml-16">
-                <img className='w-4 h-4 ml-2' src={searchIcon} alt="svg" />
-                <p className='text-black/60 text-xs ml-2'>Search with AI (Ctrl + K)</p>
+            <div className="flex flex-1 justify-center">
+                <div className="flex h-8 w-60 border border-solid border-windows-300 rounded-2xl items-center mr-3 ml-16">
+                    <img className='w-4 h-4 ml-2' src={searchIcon} alt="svg"/>
+                    <p className='text-black/60 text-xs ml-2'>Search with AI (Ctrl + K)</p>
+                </div>
+                <div className="flex mt-1">
+                    <img className="h-5 w-5" src={sparkleBubble} alt="svg" />
+                </div>
             </div>
-            <div className="">
-                <img className="h-5 w-5" src={sparkleBubble} alt="svg" />
-            </div>
+
             <div className="text-black/60 text-xs mr-3">
                 <p>New Foundry</p>
             </div>
-            <div className="flex space-x-[0.8rem] text-black/60 text-xs mr-2">
+            <div className="flex space-x-[0.8rem] text-black/60 text-xs mr-2 ml-auto">
                 <p>Home</p>
                 <p>Discover</p>
                 <p className='text-black font-semibold'>Build</p>
                 <p>Operate</p>
                 <p>Docs</p>
             </div>
-            <div className="flex ml-auto mr-7 space-x-3.5">
+            <div className="flex mr-7 space-x-3.5">
                 <img className="h-4.5 w-4.5" src={bell} alt="Notification Bell" />
                 <img className="h-4.5 w-4.5" src={feedBack} alt="Feedback" />
                 <img className="h-5 w-5" src={profilePlaceholder} alt="svg" />

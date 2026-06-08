@@ -13,13 +13,13 @@ function Navbar() {
             <div className="">
                 <img className='ml-4 -mr-4 h-5 w-5' src={logo} alt="" />
             </div>
-            <div className="mr-0 relative right-3 text-black/60 text-sm">
+            <div className="mr-0 relative right-3 text-black/60 text-xs">
                 <p>NOTMicrosoft Foundry</p>
             </div>
             <div className="">
                 <img className='-ml-0.5 -rotate-22 h-3 w-3' src={forwardSlash} alt="SVG" />
             </div>
-            <div className="-ml-7 mr-0 text-sm">
+            <div className="-ml-7 mr-0 text-xs">
                 <p>NOTfoundryresearch</p>
             </div>
             <div className="">
@@ -27,15 +27,15 @@ function Navbar() {
             </div>
             <div className="flex h-8 w-60 border border-solid border-windows-300 rounded-2xl items-center mr-3 ml-16">
                 <img className='w-4 h-4 ml-2' src={searchIcon} alt="svg" />
-                <p className='text-black/60 text-sm ml-2'>Search with AI (Ctrl + K)</p>
+                <p className='text-black/60 text-xs ml-2'>Search with AI (Ctrl + K)</p>
             </div>
             <div className="">
                 <img className="h-5 w-5" src={sparkleBubble} alt="svg" />
             </div>
-            <div className="text-black/60 text-sm mr-0">
+            <div className="text-black/60 text-xs mr-0">
                 <p>New NOTFoundry</p>
             </div>
-            <div className="flex space-x-[0.8rem] text-black/60 text-sm mr-2">
+            <div className="flex space-x-[0.8rem] text-black/60 text-xs mr-2">
                 <p>Home</p>
                 <p>Discover</p>
                 <p className='text-black font-semibold'>Build</p>

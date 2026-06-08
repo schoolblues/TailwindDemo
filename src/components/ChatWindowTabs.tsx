@@ -1,5 +1,6 @@
 import settings from "../assets/settings.svg"
-import newChat from "../assets/newChat.svg"
+import newChatTwo from "../assets/NewMessageBubbleTwo.svg"
+import arrowDown from "../assets/arrowDown.svg"
 
 type Props = {
     active: "Chat" | "YAML" | "Call Agent"
@@ -26,18 +27,19 @@ function ChatWindowTabs({ active, setActive }: Props) {
                     <button className="w-full py-2 h-full" onClick={() => setActive("Call Agent")}>Call agent</button>
                 </div>
             </div>
-            <div className="mt-4 mr-4 items-center flex text-right space-x-3.5 ml-auto">
-                <div className="">
-                    <p>Metrics</p>
+            <div className="mt-4 mr-4 items-center flex text-right ml-auto">
+                <div className="flex items-center text-xs mr-8">
+                    <p className="text-black/70" >Metrics</p>
+                    <img className="ml-2 h-[0.6rem] w-[0.6rem]" src={arrowDown} alt="SVG" />
                 </div>
-                <div className="">
-                    <img className="h-4 w-4" src={settings} alt="SettingsButton" />
+                <div className="mr-2">
+                    <img className="h-4.5 w-4.5" src={settings} alt="SettingsButton" />
                 </div>
-                <div className="">
+                <div className="mr-7">
                     <p>Configure</p>
                 </div>
                 <div className="">
-                    <img className="h-4 w-4" src={newChat} alt="New Chat" />
+                    <img className="h-4.5 w-4.5" src={newChatTwo} alt="New Chat" />
                 </div>
             </div>
         </div>

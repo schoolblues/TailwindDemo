@@ -1,5 +1,6 @@
-import { useEffect, useState} from 'react';
-import { codeToHtml } from 'shiki';
+import { createHighlighterCoreSync } from 'shiki';
+import { createJavaScriptRegexEngine } from 'shiki';
+import YAML from 'shiki/langs/yaml.mjs'
 import githubLightHC from 'shiki/themes/github-light-high-contrast.mjs'
 
 const punctuationTheme = {
@@ -64,26 +65,24 @@ blueprint_reference:
     blueprint_id:
 agent_guid:`;
 
+const highlighter = createHighlighterCoreSync({
+    langs:  [YAML],
+    themes: [punctuationTheme],
+    engine: createJavaScriptRegexEngine(),
+});
+
+const YAMLHighlight = highlighter.codeToHtml(sample, {
+    lang: 'yaml',
+    theme: punctuationTheme,
+    colorReplacements: {
+        '#ffffff' : '#cce4f6',
+        '#023b95' : '#e60000',
+        '#032563' : '#000000'   
+    }
+})
+
 export function YAMLBlock() {
-    const [html, setHtml] = useState('');
-
-    useEffect(() => {
-        let alive = true;
-        codeToHtml(sample, {
-            lang: "yaml",
-            theme: punctuationTheme,
-            colorReplacements: {                                         
-           '#ffffff' : '#cce4f6',
-           '#023b95' : '#e60000',
-           '#032563' : '#000000'                                                  
-        },
-        }).then((out) => {
-            if (alive) setHtml(out);
-        });
-        return () => { alive = false; };
-    }, []);
-
     return (
-        <div className="yaml-view h-full m-4 [&>pre]:rounded-md [&>pre]:h-full [&>pre]:pt-1" dangerouslySetInnerHTML={{ __html: html }}></div>
+        <div className="yaml-view h-full m-4 [&>pre]:rounded-md [&>pre]:h-full [&>pre]:pt-1" dangerouslySetInnerHTML={{ __html: YAMLHighlight }}></div>
     );
 }
